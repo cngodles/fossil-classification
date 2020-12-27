@@ -1,0 +1,100 @@
+div.fossil-classification {
+  width: 280px;
+  background-color: #dcdcdc;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #666;
+  float: right;
+  box-sizing: border-box; }
+  div.fossil-classification h2, div.fossil-classification h3 {
+    margin: 0;
+    padding: 0 0 10px 0;
+    text-align: center;
+    line-height: 1; }
+  div.fossil-classification h2 {
+    font-style: italic;
+    font-size: 20px; }
+  div.fossil-classification h3 {
+    font-size: 18px; }
+  div.fossil-classification p.temporal-range {
+    text-align: center;
+    margin: 0;
+    padding: 0 0 15px 0;
+    font-size: 14px; }
+  div.fossil-classification p.holotype {
+    text-align: center;
+    margin: 0;
+    padding: 15px 0 0 0; }
+  div.fossil-classification--chart {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 80px 170px;
+    grid-template-columns: 80px 170px;
+    -ms-grid-columns: 95px 154px;
+    grid-template-columns: 95px 154px;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "k kd" "p pd" "p pd" "c cd" "o od" "f fd" "g gd" "s sd"; }
+    div.fossil-classification--chart > [data-g] {
+      -ms-grid-row-span: 1;
+      -ms-grid-column-span: 1;
+      padding: 8px;
+      border-bottom: 1px solid #666; }
+      div.fossil-classification--chart > [data-g] p {
+        margin: 0;
+        padding: 0;
+        font-size: 16px; }
+      div.fossil-classification--chart > [data-g].fc-label {
+        -ms-grid-column: 1;
+        border-left: 1px solid #666; }
+      div.fossil-classification--chart > [data-g].fc-val {
+        -ms-grid-column: 2;
+        border-right: 1px solid #666;
+        font-weight: 700; }
+    div.fossil-classification--chart > [data-g=k] {
+      -ms-grid-row: 1;
+      grid-area: k;
+      background-color: #bffffc;
+      border-radius: 10px 0 0 0;
+      border-top: 1px solid #666; }
+      div.fossil-classification--chart > [data-g=k].fc-val {
+        grid-area: kd;
+        border-radius: 0 10px 0 0; }
+    div.fossil-classification--chart > [data-g=p] {
+      -ms-grid-row: 2;
+      grid-area: p;
+      background-color: #bbffd3; }
+      div.fossil-classification--chart > [data-g=p].fc-val {
+        grid-area: pd; }
+    div.fossil-classification--chart > [data-g=c] {
+      -ms-grid-row: 3;
+      grid-area: c;
+      background-color: #bbffb1; }
+      div.fossil-classification--chart > [data-g=c].fc-val {
+        grid-area: cd; }
+    div.fossil-classification--chart > [data-g=o] {
+      -ms-grid-row: 4;
+      grid-area: o;
+      background-color: #d9ffaf; }
+      div.fossil-classification--chart > [data-g=o].fc-val {
+        grid-area: od; }
+    div.fossil-classification--chart > [data-g=f] {
+      -ms-grid-row: 5;
+      grid-area: f;
+      background-color: #fcffac; }
+      div.fossil-classification--chart > [data-g=f].fc-val {
+        grid-area: fd; }
+    div.fossil-classification--chart > [data-g=g] {
+      -ms-grid-row: 6;
+      grid-area: g;
+      background-color: #f8d3a9; }
+      div.fossil-classification--chart > [data-g=g].fc-val {
+        grid-area: gd; }
+    div.fossil-classification--chart > [data-g=s] {
+      -ms-grid-row: 7;
+      grid-area: s;
+      background-color: #eac3a6;
+      border-radius: 0 0 0 10px; }
+      div.fossil-classification--chart > [data-g=s].fc-val {
+        grid-area: sd;
+        border-radius: 0 0 10px 0; }

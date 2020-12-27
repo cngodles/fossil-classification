@@ -15,6 +15,9 @@ registerBlockType('fossil-id/fossil-id-box', {
   description: 'A box to display name, scientific classification and temporal range.',
   icon: 'analytics',
   category: 'common',
+	supports: {
+		align: ['left', 'right', 'center']
+	},
 	attributes: {
 		name: {
       type: 'string',

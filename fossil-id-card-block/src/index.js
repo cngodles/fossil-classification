@@ -30,31 +30,31 @@ registerBlockType('fossil-id/fossil-id-box', {
 		}, 
 		kingdom: { 
 			source: 'html',
-      selector: '[data-g="k"].fc-val p'
+      selector: '[data-g="k"] p.fc-val'
 		}, 
 		phylum: { 
 			source: 'html',
-      selector: '[data-g="p"].fc-val p'
+      selector: '[data-g="p"] p.fc-val'
 		}, 
 		className: { 
 			source: 'html',
-      selector: '[data-g="c"].fc-val p'
+      selector: '[data-g="c"] p.fc-val'
 		}, 
 		order: { 
 			source: 'html',
-      selector: '[data-g="o"].fc-val p'
+      selector: '[data-g="o"] p.fc-val'
 		}, 
 		family: { 
 			source: 'html',
-      selector: '[data-g="f"].fc-val p'
+      selector: '[data-g="f"] p.fc-val'
 		}, 
 		genus: { 
 			source: 'html',
-      selector: '[data-g="g"].fc-val p'
+      selector: '[data-g="g"] p.fc-val'
 		}, 
 		species: { 
 			source: 'html',
-      selector: '[data-g="s"].fc-val p'
+      selector: '[data-g="s"] p.fc-val'
 		}, 
 		holoType: { 
 			source: 'html',
@@ -119,71 +119,78 @@ registerBlockType('fossil-id/fossil-id-box', {
 					/>
 				<h3>Scientific Classification</h3>
 				<div class="fossil-classification--chart">
-					<div data-g="k" class="fc-label"><p>Kingdom:</p></div>
-					<div data-g="k" class="fc-val">
+					<div data-g="k">
+						<p className="fc-label">Kingdom:</p>
 						<RichText 
 							key="editable"
 							tagName="p"
+			 				className="fc-val"
 							placeholder="Kingdom (eg. Animalia)"
 							value={ kingdom }
 							onChange={ onChangeKingdom }
 							/>
 					</div>
-					<div data-g="p" class="fc-label"><p>Phylum:</p></div>
-					<div data-g="p" class="fc-val">
+					<div data-g="p">
+						<p className="fc-label">Phylum:</p>
 						<RichText 
 							key="editable"
 							tagName="p"
+			 				className="fc-val"
 							placeholder="Phylum"
 							value={ phylum }
 							onChange={ onChangePhylum }
 							/>
 					</div>
-					<div data-g="c" class="fc-label"><p>Class:</p></div>
-					<div data-g="c" class="fc-val">
+					<div data-g="c">
+						<p className="fc-label">Class:</p>
 						<RichText 
 							key="editable"
 							tagName="p"
+			 				className="fc-val"
 							placeholder="Class"
 							value={ className }
 							onChange={ onChangeClass }
 							/>
 					</div>
-					<div data-g="o" class="fc-label"><p>Order:</p></div>
-					<div data-g="o" class="fc-val">
+					<div data-g="o">
+						<p className="fc-label">Order:</p>
 						<RichText 
 							key="editable"
 							tagName="p"
+			 				className="fc-val"
 							placeholder="Order"
 							value={ order }
 							onChange={ onChangeOrder }
 							/>
 					</div>
-					<div data-g="f" class="fc-label"><p>Family:</p></div>
-					<div data-g="f" class="fc-val">
+					<div data-g="f">
+						<p className="fc-label">Family:</p>
 						<RichText 
 							key="editable"
 							tagName="p"
+			 				className="fc-val"
 							placeholder="Family"
 							value={ family }
 							onChange={ onChangeFamily }
 							/>
 					</div>
-					<div data-g="g" class="fc-label"><p>Genus:</p></div>
-					<div data-g="g" class="fc-val">
+					<div data-g="g">
+						<p className="fc-label">Genus:</p>
 						<RichText 
 							key="editable"
 							tagName="p"
+			 				className="fc-val"
 							placeholder="Genus"
 							value={ genus }
 							onChange={ onChangeGenus }
 							/>
 					</div>
-					<div data-g="s" class="fc-label"><p>Species:</p></div>
-					<div data-g="s" class="fc-val">
+					<div data-g="s">
+						<p className="fc-label">Species:</p>
 						<RichText 
 							key="editable"
 							tagName="p"
+			 				className="fc-val"
 							placeholder="Species"
 							value={ species }
 							onChange={ onChangeSpecies }
@@ -216,20 +223,34 @@ registerBlockType('fossil-id/fossil-id-box', {
 					/>
 				<h3>Scientific Classification</h3>
 				<div className="fossil-classification--chart">
-					<div data-g="k" class="fc-label"><p>Kingdom:</p></div>
-					<div data-g="k" class="fc-val"><p>{kingdom}</p></div>
-					<div data-g="p" class="fc-label"><p>Phylum:</p></div>
-					<div data-g="p" class="fc-val"><p>{phylum}</p></div>
-					<div data-g="c" class="fc-label"><p>Class:</p></div>
-					<div data-g="c" class="fc-val"><p>{className}</p></div>
-					<div data-g="o" class="fc-label"><p>Order:</p></div>
-					<div data-g="o" class="fc-val"><p>{order}</p></div>
-					<div data-g="f" class="fc-label"><p>Family:</p></div>
-					<div data-g="f" class="fc-val"><p>{family}</p></div>
-					<div data-g="g" class="fc-label"><p>Genus:</p></div>
-					<div data-g="g" class="fc-val"><p>{genus}</p></div>
-					<div data-g="s" class="fc-label"><p>Species:</p></div>
-					<div data-g="s" class="fc-val"><p>{species}</p></div>
+					<div data-g="k">
+						<p className="fc-label">Kingdom:</p>
+						<p className="fc-val">{kingdom}</p>
+					</div>
+					<div data-g="p">
+						<p className="fc-label">Phylum:</p>
+						<p className="fc-val">{phylum}</p>
+					</div>
+					<div data-g="c">
+						<p className="fc-label">Class:</p>
+						<p className="fc-val">{className}</p>
+					</div>
+					<div data-g="o">
+						<p className="fc-label">Order:</p>
+						<p className="fc-val">{order}</p>
+					</div>
+					<div data-g="f">
+						<p className="fc-label">Family:</p>
+						<p className="fc-val">{family}</p>
+					</div>
+					<div data-g="g">
+						<p className="fc-label">Genus:</p>
+						<p className="fc-val">{genus}</p>
+					</div>
+					<div data-g="s">
+						<p className="fc-label">Species:</p>
+						<p className="fc-val">{species}</p>
+					</div>
 				</div>
 				<p className="holotype">{holoType}</p>
 			</div>

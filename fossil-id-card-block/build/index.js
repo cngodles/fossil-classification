@@ -152,31 +152,31 @@ registerBlockType('fossil-id/fossil-id-box', {
     },
     kingdom: {
       source: 'html',
-      selector: '[data-g="k"].fc-val p'
+      selector: '[data-g="k"] p.fc-val'
     },
     phylum: {
       source: 'html',
-      selector: '[data-g="p"].fc-val p'
+      selector: '[data-g="p"] p.fc-val'
     },
     className: {
       source: 'html',
-      selector: '[data-g="c"].fc-val p'
+      selector: '[data-g="c"] p.fc-val'
     },
     order: {
       source: 'html',
-      selector: '[data-g="o"].fc-val p'
+      selector: '[data-g="o"] p.fc-val'
     },
     family: {
       source: 'html',
-      selector: '[data-g="f"].fc-val p'
+      selector: '[data-g="f"] p.fc-val'
     },
     genus: {
       source: 'html',
-      selector: '[data-g="g"].fc-val p'
+      selector: '[data-g="g"] p.fc-val'
     },
     species: {
       source: 'html',
-      selector: '[data-g="s"].fc-val p'
+      selector: '[data-g="s"] p.fc-val'
     },
     holoType: {
       source: 'html',
@@ -282,86 +282,79 @@ registerBlockType('fossil-id/fossil-id-box', {
     }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h3", null, "Scientific Classification"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
       class: "fossil-classification--chart"
     }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "k",
-      class: "fc-label"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "Kingdom:")), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "k",
-      class: "fc-val"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(RichText, {
+      "data-g": "k"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-label"
+    }, "Kingdom:"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(RichText, {
       key: "editable",
       tagName: "p",
+      className: "fc-val",
       placeholder: "Kingdom (eg. Animalia)",
       value: kingdom,
       onChange: onChangeKingdom
     })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "p",
-      class: "fc-label"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "Phylum:")), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "p",
-      class: "fc-val"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(RichText, {
+      "data-g": "p"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-label"
+    }, "Phylum:"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(RichText, {
       key: "editable",
       tagName: "p",
+      className: "fc-val",
       placeholder: "Phylum",
       value: phylum,
       onChange: onChangePhylum
     })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "c",
-      class: "fc-label"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "Class:")), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "c",
-      class: "fc-val"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(RichText, {
+      "data-g": "c"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-label"
+    }, "Class:"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(RichText, {
       key: "editable",
       tagName: "p",
+      className: "fc-val",
       placeholder: "Class",
       value: className,
       onChange: onChangeClass
     })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "o",
-      class: "fc-label"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "Order:")), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "o",
-      class: "fc-val"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(RichText, {
+      "data-g": "o"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-label"
+    }, "Order:"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(RichText, {
       key: "editable",
       tagName: "p",
+      className: "fc-val",
       placeholder: "Order",
       value: order,
       onChange: onChangeOrder
     })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "f",
-      class: "fc-label"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "Family:")), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "f",
-      class: "fc-val"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(RichText, {
+      "data-g": "f"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-label"
+    }, "Family:"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(RichText, {
       key: "editable",
       tagName: "p",
+      className: "fc-val",
       placeholder: "Family",
       value: family,
       onChange: onChangeFamily
     })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "g",
-      class: "fc-label"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "Genus:")), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "g",
-      class: "fc-val"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(RichText, {
+      "data-g": "g"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-label"
+    }, "Genus:"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(RichText, {
       key: "editable",
       tagName: "p",
+      className: "fc-val",
       placeholder: "Genus",
       value: genus,
       onChange: onChangeGenus
     })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "s",
-      class: "fc-label"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "Species:")), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "s",
-      class: "fc-val"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(RichText, {
+      "data-g": "s"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-label"
+    }, "Species:"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(RichText, {
       key: "editable",
       tagName: "p",
+      className: "fc-val",
       placeholder: "Species",
       value: species,
       onChange: onChangeSpecies
@@ -398,48 +391,48 @@ registerBlockType('fossil-id/fossil-id-box', {
     }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h3", null, "Scientific Classification"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
       className: "fossil-classification--chart"
     }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "k",
-      class: "fc-label"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "Kingdom:")), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "k",
-      class: "fc-val"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, kingdom)), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "p",
-      class: "fc-label"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "Phylum:")), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "p",
-      class: "fc-val"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, phylum)), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "c",
-      class: "fc-label"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "Class:")), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "c",
-      class: "fc-val"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, className)), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "o",
-      class: "fc-label"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "Order:")), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "o",
-      class: "fc-val"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, order)), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "f",
-      class: "fc-label"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "Family:")), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "f",
-      class: "fc-val"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, family)), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "g",
-      class: "fc-label"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "Genus:")), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "g",
-      class: "fc-val"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, genus)), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "s",
-      class: "fc-label"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "Species:")), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      "data-g": "s",
-      class: "fc-val"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, species))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      "data-g": "k"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-label"
+    }, "Kingdom:"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-val"
+    }, kingdom)), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+      "data-g": "p"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-label"
+    }, "Phylum:"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-val"
+    }, phylum)), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+      "data-g": "c"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-label"
+    }, "Class:"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-val"
+    }, className)), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+      "data-g": "o"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-label"
+    }, "Order:"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-val"
+    }, order)), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+      "data-g": "f"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-label"
+    }, "Family:"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-val"
+    }, family)), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+      "data-g": "g"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-label"
+    }, "Genus:"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-val"
+    }, genus)), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+      "data-g": "s"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-label"
+    }, "Species:"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+      className: "fc-val"
+    }, species))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
       className: "holotype"
     }, holoType));
   }

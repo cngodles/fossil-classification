@@ -1,7 +1,7 @@
 div.fossil-classification {
-  width: 240px;
+  width: 200px;
   background-color: #dcdcdc;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
   border: 1px solid #666;
   box-sizing: border-box;
@@ -14,67 +14,86 @@ div.fossil-classification {
     font-weight: 700; }
   div.fossil-classification h2 {
     font-style: italic;
-    font-size: 19px; }
+    font-size: 17px; }
   div.fossil-classification h3 {
-    font-size: 16px; }
+    font-size: 15px; }
   div.fossil-classification p.temporal-range {
     text-align: center;
     margin: 0;
-    padding: 0 0 15px 0;
-    font-size: 14px; }
+    padding: 0 0 10px 0;
+    font-size: 14px;
+    line-height: 1; }
   div.fossil-classification p.holotype {
     text-align: center;
     margin: 0;
-    padding: 15px 0 0 0; }
-  div.fossil-classification--chart > [data-g] {
-    padding: 8px;
-    border-bottom: 1px solid #666;
-    border-left: 1px solid #666;
-    border-right: 1px solid #666; }
-    div.fossil-classification--chart > [data-g] p {
-      margin: 0;
-      padding: 0;
-      font-size: 16px; }
-      div.fossil-classification--chart > [data-g] p.fc-label {
-        font-weight: 400;
-        width: 100%;
-        font-size: 12px; }
-      div.fossil-classification--chart > [data-g] p.fc-val {
-        font-weight: 700;
-        width: 100%;
-        font-size: 16px; }
-  div.fossil-classification--chart > [data-g=k] {
-    background-color: #bffffc;
-    border-radius: 10px 10px 0 0;
-    border-top: 1px solid #666; }
-  div.fossil-classification--chart > [data-g=p] {
-    background-color: #bbffd3; }
-  div.fossil-classification--chart > [data-g=c] {
-    background-color: #bbffb1; }
-  div.fossil-classification--chart > [data-g=o] {
-    background-color: #d9ffaf; }
-  div.fossil-classification--chart > [data-g=f] {
-    background-color: #fcffac; }
-  div.fossil-classification--chart > [data-g=g] {
-    background-color: #f8d3a9; }
-  div.fossil-classification--chart > [data-g=s] {
-    background-color: #eac3a6;
-    border-radius: 0 0 10px 10px; }
+    padding: 15px 0 0 0;
+    font-size: 14px;
+    line-height: 1; }
+  div.fossil-classification--chart {
+    text-align: center; }
+    div.fossil-classification--chart > [data-g] {
+      padding: 6px;
+      border-bottom: 1px solid #666;
+      border-left: 1px solid #666;
+      border-right: 1px solid #666; }
+      div.fossil-classification--chart > [data-g] p {
+        margin: 0;
+        padding: 0;
+        font-size: 15px; }
+        div.fossil-classification--chart > [data-g] p.fc-label {
+          font-weight: 400;
+          width: 100%;
+          font-size: 12px;
+          line-height: 1.5; }
+        div.fossil-classification--chart > [data-g] p.fc-val {
+          font-weight: 700;
+          width: 100%;
+          font-size: 15px;
+          line-height: 1; }
+    div.fossil-classification--chart > [data-g=k] {
+      background-color: #bffffc;
+      border-radius: 10px 10px 0 0;
+      border-top: 1px solid #666; }
+    div.fossil-classification--chart > [data-g=p] {
+      background-color: #bbffd3; }
+    div.fossil-classification--chart > [data-g=c] {
+      background-color: #bbffb1; }
+    div.fossil-classification--chart > [data-g=o] {
+      background-color: #d9ffaf; }
+    div.fossil-classification--chart > [data-g=f] {
+      background-color: #fcffac; }
+    div.fossil-classification--chart > [data-g=g] {
+      background-color: #f8d3a9; }
+    div.fossil-classification--chart > [data-g=s] {
+      background-color: #eac3a6;
+      border-radius: 0 0 10px 10px; }
 
 @media only screen and (min-width: 768px) {
   div.fossil-classification {
-    width: 280px; }
-    div.fossil-classification--chart > [data-g] p.fc-label {
-      width: 75px;
-      float: left;
+    width: 280px;
+    padding: 15px; }
+    div.fossil-classification h2 {
+      font-size: 19px; }
+    div.fossil-classification h3 {
       font-size: 16px; }
-    div.fossil-classification--chart > [data-g] p.fc-val {
-      width: 152px;
-      float: right;
+    div.fossil-classification p.holotype {
       font-size: 16px; }
-    div.fossil-classification--chart > [data-g]:after {
-      clear: both;
-      content: '';
-      display: table; } }
+    div.fossil-classification--chart {
+      text-align: left; }
+      div.fossil-classification--chart > [data-g] {
+        padding: 8px; }
+        div.fossil-classification--chart > [data-g] p.fc-label {
+          width: 75px;
+          float: left;
+          font-size: 16px;
+          line-height: 1; }
+        div.fossil-classification--chart > [data-g] p.fc-val {
+          width: 152px;
+          float: right;
+          font-size: 16px; }
+        div.fossil-classification--chart > [data-g]:after {
+          clear: both;
+          content: '';
+          display: table; } }
 * {
   box-sizing: border-box; }
